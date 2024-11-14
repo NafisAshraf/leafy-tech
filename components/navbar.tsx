@@ -156,7 +156,7 @@ function ProfileMenu({ mobile = false }: { mobile?: boolean }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="relative h-8 w-8 rounded-full bg-transparent">
+        <Button className="relative w-7 rounded-full bg-transparent ">
           <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" alt="User" />
             <AvatarFallback>UN</AvatarFallback>

@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-lg-4 col-8 px-3">
-            <div className="py-3 px-5 h-[500px] rounded rounded-4 border border-white bg-black flex items-center">
+            <div className="py-3 px-5 h-[500px] rounded rounded-3 border border-white bg-black flex items-center">
               <div className="container flex flex-col items-center">
                 <h2 className="text-white text-center text-3xl fw-semibold mb-4 ">
                   pH Meter
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-lg-6 col-12 px-3">
-            <div className=" pt-5 pb-3 h-[500px] flex flex-col items-center justify-center rounded rounded-4 border border-white bg-black w-full">
+            <div className=" pt-5 pb-3 h-[500px] flex flex-col items-center justify-center rounded rounded-3 border border-white bg-black w-full">
               <h2 className="text-white text-center text-3xl fw-semibold mb-4">
                 Total Dissolved Solid (TDS)
               </h2>
@@ -65,9 +65,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-11   py-3">
+        <div className="grid grid-cols-11  py-3 mx-2">
           <div className="col-span-4 px-3">
-            <div className="h-[400px] rounded rounded-4 border border-white bg-black flex items-center">
+            <div className="h-[400px] rounded rounded-3 border border-white bg-black flex items-center">
               <div className="container px-0 flex flex-col items-center">
                 <h2 className="text-white text-center text-3xl fw-semibold mb-4 ">
                   Temperature
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-4 px-3">
-            <div className="h-[400px] rounded rounded-4 border border-white bg-black flex items-center">
+            <div className="h-[400px] rounded rounded-3 border border-white bg-black flex items-center">
               <div className="container px-0 flex flex-col items-center">
                 <h2 className="text-white text-center text-3xl fw-semibold mb-4 ">
                   Humidity
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-3 px-3">
-            <div className="h-[400px] rounded rounded-4 border border-white bg-black flex items-center">
+            <div className="h-[400px] rounded rounded-3 border border-white bg-black flex items-center">
               <div className="container px-10 flex flex-col items-center">
                 <h2 className="text-white text-center text-3xl fw-semibold mb-4 ">
                   Weather
@@ -100,12 +100,12 @@ export default function Home() {
 
         <div className="row py-3 mx-1">
           <div className="col-12 col-xl-8 px-3">
-            <div className="py-3 h-[500px] flex flex-col items-center justify-center rounded rounded-4 border border-white bg-black w-full">
+            <div className="py-3 h-[500px] flex flex-col items-center justify-center rounded rounded-3 border border-white bg-black w-full">
               <Graph />
             </div>
           </div>
           <div className="col-12 col-xl-4 px-3">
-            <div className="pb-2 h-[500px] flex flex-col items-center justify-center rounded rounded-4 border border-white bg-black w-full">
+            <div className="pb-2 h-[500px] flex flex-col items-center justify-center rounded rounded-3 border border-white bg-black w-full">
               <h2 className="text-3xl font-bold text-white mb-2 ">
                 Weekly Report
               </h2>
