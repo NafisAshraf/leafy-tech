@@ -22,10 +22,14 @@ const generateTDSData = () => {
 };
 
 export function PieChart() {
-  const [tdsData, setTDSData] = useState(generateTDSData());
+  const [tdsData, setTDSData] = useState<
+    { id: string; label: string; value: number }[]
+  >([]);
   const [innerRadius, setInnerRadius] = useState(0.5); // Initial inner radius
 
   useEffect(() => {
+    setTDSData(generateTDSData());
+
     const interval = setInterval(() => {
       setTDSData(generateTDSData());
     }, 3000);

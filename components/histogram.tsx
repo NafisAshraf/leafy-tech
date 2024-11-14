@@ -6,7 +6,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
+  // Legend,
   BarChart,
 } from "recharts";
 
@@ -36,10 +36,14 @@ export function Histogram() {
     aboveAvg: day.max - day.avg,
   }));
 
+  // Dynamically calculate the width based on the window size
+  const width =
+    typeof window !== "undefined" && window.innerWidth <= 768 ? 300 : 450;
+
   return (
     <BarChart
       data={processedData}
-      width={window.innerWidth <= 768 ? 300 : 450} // Specify the width directly
+      width={width} // Dynamically specify the width
       height={300} // Specify the height directly
       margin={{ top: 20, right: 40, left: 0, bottom: 5 }}
     >
@@ -68,6 +72,8 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({
 }) => {
   if (active && payload && payload.length) {
     const minTemp = payload.find((p) => p.dataKey === "min")?.value;
+    if (minTemp === undefined) return null;
+
     const maxTemp =
       minTemp +
       (payload.find((p) => p.dataKey === "belowAvg")?.value || 0) +

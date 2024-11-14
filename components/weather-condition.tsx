@@ -8,8 +8,6 @@ import {
   CloudSnow,
   CloudLightning,
   Wind,
-  Droplets,
-  Thermometer,
 } from "lucide-react";
 
 // Mock weather data for multiple conditions (replace with actual API data in a real application)

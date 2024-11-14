@@ -42,17 +42,17 @@ const phReferenceValues = [
   { value: 14, label: "14" },
 ];
 
-const statusLabels = [
-  { label: "Strongly Acidic", color: "#FF6347" },
-  { label: "Acidic", color: "#FFA07A" },
-  { label: "Slightly Acidic", color: "#FFFF00" },
-  { label: "Neutral", color: "#32CD32" },
-  { label: "Slightly Alkaline", color: "#00BFFF" },
-  { label: "Mildly Alkaline", color: "#008080" },
-  { label: "Moderately Alkaline", color: "#008080" },
-  { label: "Strongly Alkaline", color: "#008080" },
-  { label: "Very Alkaline", color: "#007ACC" },
-];
+// const statusLabels = [
+//   { label: "Strongly Acidic", color: "#FF6347" },
+//   { label: "Acidic", color: "#FFA07A" },
+//   { label: "Slightly Acidic", color: "#FFFF00" },
+//   { label: "Neutral", color: "#32CD32" },
+//   { label: "Slightly Alkaline", color: "#00BFFF" },
+//   { label: "Mildly Alkaline", color: "#008080" },
+//   { label: "Moderately Alkaline", color: "#008080" },
+//   { label: "Strongly Alkaline", color: "#008080" },
+//   { label: "Very Alkaline", color: "#007ACC" },
+// ];
 
 const PHGauge = ({
   value,
