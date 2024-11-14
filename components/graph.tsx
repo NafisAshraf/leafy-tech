@@ -15,7 +15,12 @@ const generateTemperatureData = () => {
 };
 
 export function Graph() {
-  const [temperatureData, setTemperatureData] = useState([]);
+  // Define the type for the temperature data
+  type TemperatureDataPoint = { x: number; y: number };
+  type TemperatureData = { id: string; data: TemperatureDataPoint[] }[];
+
+  // Update the state to use the defined type
+  const [temperatureData, setTemperatureData] = useState<TemperatureData>([]);
 
   useEffect(() => {
     setTemperatureData(generateTemperatureData());
@@ -69,8 +74,10 @@ export function Graph() {
           useMesh={true}
           theme={{
             background: "transparent",
-            textColor: "#ffffff",
-            fontSize: 11,
+            text: {
+              fill: "#ffffff",
+            },
+            // fontSize: 11,
             axis: {
               domain: {
                 line: {
