@@ -144,9 +144,7 @@ function NavItem({
   return (
     <Link
       href={href}
-      className={`flex items-center space-x-2 hover:text-gray-300 transition-colors ${
-        mobile ? "block py-2 text-lg" : "text-base"
-      }`}
+      className={`flex items-center space-x-2 hover:text-gray-300 transition-colors text-base`}
     >
       {icon}
       <span>{text}</span>
